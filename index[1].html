@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroSpace Xcel | FieldShift</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="#home">
+    <img src="agrospace-xcel-logo[1].jpeg" alt="AgroSpace Xcel logo">
+    <span><b>AgroSpace Xcel</b><small>NASA Space Apps Challenge 2026</small></span>
+  </a>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#fieldshift">FieldShift</a>
+    <a href="#insights">Insights</a>
+    <a href="#team">Who We Are</a>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="hero-text">
+    <div class="pill">NASA SPACE APPS CHALLENGE 2026</div>
+    <h1>Adapting farms with <em>NASA data.</em></h1>
+    <p class="lead">We are <strong>AgroSpace Xcel</strong> — a team of first-year Aerospace Engineering students from Universiti Sains Malaysia, building FieldShift to help farmers face unpredictable weather with clearer environmental insights.</p>
+    <div class="actions">
+      <a class="btn primary" href="#fieldshift">Explore FieldShift ↗</a>
+      <a class="btn ghost" href="#team">Meet the team</a>
+    </div>
+    <div class="mini-stats">
+      <div><b>5</b><span>Student innovators</span></div>
+      <div><b>USM</b><span>Aerospace Engineering</span></div>
+      <div><b>NASA</b><span>Earth observation data</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="planet">🌱</div>
+    <div class="ring ring1"></div><div class="ring ring2"></div>
+    <div class="visual-label">FROM SPACE<br><b>TO THE FIELD</b></div>
+  </div>
+</section>
+
+<section class="intro-strip">
+  <div><span>01</span><h2>Who we are</h2></div>
+  <p>Young aerospace engineers using our perspective on satellites, Earth observation and technology to explore practical solutions for agriculture.</p>
+</section>
+
+<section id="team" class="team section">
+  <div class="eyebrow">WHO WE ARE</div>
+  <h2>First-year engineers.<br><span>Big problems to solve.</span></h2>
+  <div class="team-grid">
+    <article class="team-card">
+      <div class="icon">✈</div>
+      <h3>Aerospace Engineering</h3>
+      <p>We are first-year Aerospace Engineering students at <strong>Universiti Sains Malaysia (USM)</strong>, learning how aerospace technology can connect with real-world challenges on Earth.</p>
+    </article>
+    <article class="team-card">
+      <div class="icon">🛰</div>
+      <h3>Satellite Perspective</h3>
+      <p>Our project explores how satellite and environmental observations can turn changing conditions into information that farmers can understand and act on.</p>
+    </article>
+    <article class="team-card">
+      <div class="icon">🌾</div>
+      <h3>Built for Farmers</h3>
+      <p>We want complex environmental data to become simple: what is happening, why it matters, and what farmers can monitor next.</p>
+    </article>
+  </div>
+</section>
+
+<section id="fieldshift" class="field-section section">
+  <div class="eyebrow">FIELD SHIFT</div>
+  <div class="heading-row">
+    <div><h2>Explore your field.</h2><p>Select a location and see a prototype environmental assessment.</p></div>
+    <div class="data-tags"><span>Rainfall</span><span>Soil Moisture</span><span>Heat</span><span>Vegetation</span></div>
+  </div>
+  <div class="explorer">
+    <div id="map"></div>
+    <aside class="dashboard">
+      <label>SELECTED LOCATION</label>
+      <div id="location">Kudat, Sabah</div>
+      <button id="analyze">Analyze field</button>
+      <div id="loading">Analyzing environmental indicators…</div>
+      <div class="health"><small>FIELD HEALTH</small><div><b id="score">72</b><span>/100</span></div></div>
+      <div class="metric"><span>💧 Water Stress</span><b>Moderate</b></div>
+      <div class="metric"><span>🌡 Heat Risk</span><b>High</b></div>
+      <div class="metric"><span>🌿 Vegetation</span><b>Declining</b></div>
+    </aside>
+  </div>
+</section>
+
+<section id="insights" class="insights section">
+  <div class="eyebrow">EXPLAINABLE INSIGHTS</div>
+  <h2>Don't just show a risk.<br><span>Explain why.</span></h2>
+  <div class="insight-grid">
+    <div><span>01</span><h3>Rainfall is below baseline</h3><p>Lower-than-expected rainfall can reduce available water for crops.</p></div>
+    <div><span>02</span><h3>Soil moisture is declining</h3><p>Declining soil moisture can signal increasing water stress.</p></div>
+    <div><span>03</span><h3>Surface temperature is elevated</h3><p>Higher land-surface temperature may increase heat stress and evaporation.</p></div>
+  </div>
+  <div class="guidance"><b>✓ ADAPTATION GUIDANCE</b><h3>Monitor irrigation and crop stress closely.</h3><p>FieldShift combines environmental signals into an understandable starting point for monitoring and adaptation.</p></div>
+</section>
+
+<section class="how section">
+  <div class="eyebrow">HOW FIELDSHIFT WORKS</div>
+  <h2>From satellite observations<br><span>to farmer decisions.</span></h2>
+  <div class="steps">
+    <div><strong>01</strong><h3>Select</h3><p>Choose a farming location on the interactive map.</p></div>
+    <div><strong>02</strong><h3>Observe</h3><p>Bring together rainfall, soil moisture, temperature and vegetation indicators.</p></div>
+    <div><strong>03</strong><h3>Explain</h3><p>Translate changing conditions into understandable risks.</p></div>
+    <div><strong>04</strong><h3>Adapt</h3><p>Give farmers a clearer basis for monitoring and responding.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div><b>AgroSpace Xcel</b><span>FieldShift · NASA Space Apps Challenge 2026</span></div>
+  <p>First-year Aerospace Engineering students · Universiti Sains Malaysia</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
